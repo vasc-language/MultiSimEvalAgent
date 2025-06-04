@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/exception/RestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/exception/RestExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/util/CommonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/util/IErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/util/JacksonMapperUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/util/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer-api/src/main/java/ai/agent/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main/java/ai/agent/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom-dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ai/agent/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,12 +69,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743597021199</updated>
-      <workItem from="1749029276993" duration="8483000" />
+      <workItem from="1749029276993" duration="8937000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
