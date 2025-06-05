@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="" />
+    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="common model工具类 util 的实现">
+      <change afterPath="$PROJECT_DIR$/common/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/auth/AuthConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/auth/Sessions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/auth/Sign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/CandidateRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/EducationRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/ProgramRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/ProjectExperienceRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/WorkExperienceRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/ChatRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/CheckProgramRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/CvRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/RegisterFaceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +44,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -29,6 +57,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2y4fYDAbM2ogcgUOlLjzahQBbpH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -46,7 +79,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/AI_Project/MultiSimEvalAgent/MultiSimEvalAgent",
+    "last_opened_file_path": "D:/AI_Project/MultiSimEvalAgent/MultiSimEvalAgent/common",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,8 +102,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743597021199</updated>
-      <workItem from="1749029276993" duration="8937000" />
+      <workItem from="1749029276993" duration="9206000" />
+      <workItem from="1749098813733" duration="53000" />
+      <workItem from="1749098880783" duration="11880000" />
     </task>
+    <task id="LOCAL-00001" summary="common model工具类 util 的实现">
+      <option name="closed" value="true" />
+      <created>1749050045245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749050045245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="common model工具类 util 的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="common model工具类 util 的实现" />
   </component>
 </project>
