@@ -53,10 +53,10 @@ public class Sessions {
      * 通过设置空值和过期时间为 0 来清除 Cookie
      */
     public static void logout(String externalApex, HttpServletResponse response) {
-        Cookie cookie = new Cookie(AuthConstant.COOKIE_NAME, "");
-        cookie.setPath("/");
-        cookie.setMaxAge(0);
-        cookie.setDomain(externalApex);
-        response.addCookie(cookie);
+        Cookie cookie = new Cookie(AuthConstant.COOKIE_NAME, ""); // 创建空值 Cookie
+        cookie.setPath("/"); // 路径为根路径，对整个域名有效
+        cookie.setMaxAge(0); // 设置过期时间为0，立即删除
+        cookie.setDomain(externalApex); // 设置 Domain 为顶级域名
+        response.addCookie(cookie); // 将 Cookie 发送到浏览器
     }
 }

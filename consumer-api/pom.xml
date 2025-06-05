@@ -17,4 +17,37 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- Spring Cloud OpenFeign启动器：声明式HTTP客户端，用于服务间的远程调用和API接口定义 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+        <!-- 项目通用模块：包含共享的数据结构、工具类和配置，提供API接口所需的DTO和Record类 -->
+        <dependency>
+            <groupId>ai.agent</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- Feign表单支持：扩展Feign客户端，支持multipart/form-data格式的文件上传请求 -->
+        <dependency>
+            <groupId>io.github.openfeign.form</groupId>
+            <artifactId>feign-form</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+        <!-- Feign Spring表单支持：与Spring框架集成的表单编码器，支持Spring MVC的文件上传 -->
+        <dependency>
+            <groupId>io.github.openfeign.form</groupId>
+            <artifactId>feign-form-spring</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+        <!-- Feign Jackson支持：为Feign客户端提供Jackson JSON序列化和反序列化功能 -->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-jackson</artifactId>
+            <version>11.10</version>
+        </dependency>
+    </dependencies>
+
 </project>
