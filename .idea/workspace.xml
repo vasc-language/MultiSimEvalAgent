@@ -4,31 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="common model工具类 util 的实现">
-      <change afterPath="$PROJECT_DIR$/common/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/auth/AuthConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/auth/Sessions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/auth/Sign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/CandidateRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/EducationRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/ProgramRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/ProjectExperienceRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/WorkExperienceRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/ChatRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/CheckProgramRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/CvRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/RegisterFaceRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/vo/UserResponse.java" afterDir="false" />
+    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="开始开发consumer model">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/idea_env_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/extract_keywords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/extract_text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/html2pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_output.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +25,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/scripts/extract_keywords.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -56,6 +53,9 @@
         <option name="userSettingsFile" value="D:\Java\Maven\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -69,30 +69,146 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/AI_Project/MultiSimEvalAgent/MultiSimEvalAgent/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.extract_keywords.executor&quot;: &quot;Run&quot;,
+    &quot;Python.extract_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.html2pdf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/AI_Project/MultiSimEvalAgent/MultiSimEvalAgent/scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.30716982&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.33844912&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent\scripts" />
       <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent" />
+      <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent\consumer\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.extract_text">
+    <configuration name="extract_keywords" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiSimEvalAgent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/extract_keywords.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="extract_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiSimEvalAgent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/extract_text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="html2pdf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiSimEvalAgent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/html2pdf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MultiSimEvalAgent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.extract_text" />
+        <item itemvalue="Python.html2pdf" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.extract_keywords" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +220,14 @@
       <updated>1743597021199</updated>
       <workItem from="1749029276993" duration="9206000" />
       <workItem from="1749098813733" duration="53000" />
-      <workItem from="1749098880783" duration="11880000" />
+      <workItem from="1749098880783" duration="23712000" />
+      <workItem from="1749182272235" duration="2199000" />
+      <workItem from="1749184514783" duration="730000" />
+      <workItem from="1749195998112" duration="6010000" />
+      <workItem from="1749208733619" duration="5063000" />
+      <workItem from="1749215444987" duration="3145000" />
+      <workItem from="1749218706579" duration="1517000" />
+      <workItem from="1749220248111" duration="1974000" />
     </task>
     <task id="LOCAL-00001" summary="common model工具类 util 的实现">
       <option name="closed" value="true" />
@@ -114,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749050045245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="common model 开发完成">
+      <option name="closed" value="true" />
+      <created>1749111642137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749111642137</updated>
+    </task>
+    <task id="LOCAL-00003" summary="开始开发consumer model">
+      <option name="closed" value="true" />
+      <created>1749137097227</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749137097227</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +273,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="common model工具类 util 的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="common model工具类 util 的实现" />
+    <MESSAGE value="common model 开发完成" />
+    <MESSAGE value="开始开发consumer model" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始开发consumer model" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MultiSimEvalAgent$test.coverage" NAME="test Coverage Results" MODIFIED="1749221785192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/MultiSimEvalAgent$extract_text.coverage" NAME="extract_text Coverage Results" MODIFIED="1749222239006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/MultiSimEvalAgent$html2pdf.coverage" NAME="html2pdf Coverage Results" MODIFIED="1749222162118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/MultiSimEvalAgent$extract_keywords.coverage" NAME="extract_keywords Coverage Results" MODIFIED="1749218814512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>
