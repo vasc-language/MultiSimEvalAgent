@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="开始开发consumer model">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/idea_env_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/extract_keywords.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/extract_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/html2pdf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_output.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="编写 python 脚本：简历自动化评测流水线">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/InterViewStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/InterViewStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Resume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/VectorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/Dto2Record.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/extract_keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/extract_keywords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/extract_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/extract_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/html2pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/html2pdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_output.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,7 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -73,6 +79,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.MarkdownToPdfConverter.executor&quot;: &quot;Run&quot;,
     &quot;Python.extract_keywords.executor&quot;: &quot;Run&quot;,
     &quot;Python.extract_text.executor&quot;: &quot;Run&quot;,
     &quot;Python.html2pdf.executor&quot;: &quot;Run&quot;,
@@ -108,7 +115,20 @@
       <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent\consumer\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.extract_text">
+  <component name="RunManager" selected="Application.MarkdownToPdfConverter">
+    <configuration name="MarkdownToPdfConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ai.agent.util.MarkdownToPdfConverter" />
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.agent.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="extract_keywords" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MultiSimEvalAgent" />
       <option name="ENV_FILES" value="" />
@@ -203,6 +223,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MarkdownToPdfConverter" />
         <item itemvalue="Python.extract_text" />
         <item itemvalue="Python.html2pdf" />
         <item itemvalue="Python.test" />
@@ -227,7 +248,9 @@
       <workItem from="1749208733619" duration="5063000" />
       <workItem from="1749215444987" duration="3145000" />
       <workItem from="1749218706579" duration="1517000" />
-      <workItem from="1749220248111" duration="1974000" />
+      <workItem from="1749220248111" duration="2301000" />
+      <workItem from="1749287826475" duration="4825000" />
+      <workItem from="1749299442417" duration="8986000" />
     </task>
     <task id="LOCAL-00001" summary="common model工具类 util 的实现">
       <option name="closed" value="true" />
@@ -253,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749137097227</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="编写 python 脚本：简历自动化评测流水线">
+      <option name="closed" value="true" />
+      <created>1749222418357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749222418357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +306,8 @@
     <MESSAGE value="common model工具类 util 的实现" />
     <MESSAGE value="common model 开发完成" />
     <MESSAGE value="开始开发consumer model" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始开发consumer model" />
+    <MESSAGE value="编写 python 脚本：简历自动化评测流水线" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写 python 脚本：简历自动化评测流水线" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
