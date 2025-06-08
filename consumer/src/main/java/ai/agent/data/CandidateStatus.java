@@ -2,6 +2,10 @@ package ai.agent.data;
 
 /**
  * 候选人状态枚举类
+ * 设计思路
+ * 使用 code 存储到数据库中，节省存储空间
+ * 使用 value 提供人类可读的描述
+ * 重写 toString() 方法返回中文描述
  */
 public enum CandidateStatus {
     WAIT(1, "等待"),

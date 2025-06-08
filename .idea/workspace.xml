@@ -4,23 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="编写 python 脚本：简历自动化评测流水线">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/InterViewStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/InterViewStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/VectorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/Dto2Record.java" afterDir="false" />
+    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="consumer model Data 数据类的开发">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/audio/AudioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/audio/services/AudioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/controller/CandidateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Candidates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Knowledge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/ResumeVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/CandidatesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/KnowledgeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/ResumeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/ResumeVectorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/CandidatesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/EmbeddingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/ResumeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/ResumeVectorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/tools/Face2FaceTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/tools/WrittenTestTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ai/agent/record/InterViewRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatusConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatusConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Resume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/Dto2Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/Dto2Record.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/extract_keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/extract_keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/extract_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/extract_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/html2pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/html2pdf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_output.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -250,7 +258,9 @@
       <workItem from="1749218706579" duration="1517000" />
       <workItem from="1749220248111" duration="2301000" />
       <workItem from="1749287826475" duration="4825000" />
-      <workItem from="1749299442417" duration="8986000" />
+      <workItem from="1749299442417" duration="9538000" />
+      <workItem from="1749343408070" duration="12118000" />
+      <workItem from="1749378668852" duration="9262000" />
     </task>
     <task id="LOCAL-00001" summary="common model工具类 util 的实现">
       <option name="closed" value="true" />
@@ -284,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749222418357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="consumer model Data 数据类的开发">
+      <option name="closed" value="true" />
+      <created>1749308570991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749308570991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +325,8 @@
     <MESSAGE value="common model 开发完成" />
     <MESSAGE value="开始开发consumer model" />
     <MESSAGE value="编写 python 脚本：简历自动化评测流水线" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写 python 脚本：简历自动化评测流水线" />
+    <MESSAGE value="consumer model Data 数据类的开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="consumer model Data 数据类的开发" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

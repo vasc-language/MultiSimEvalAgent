@@ -2,9 +2,16 @@ package ai.agent.data;
 
 import jakarta.persistence.*;
 
+/**
+ * 简历实体(使用状态转换器)
+ * 核心业务实体，包含面试全流程数据
+ * 使用多个状态枚举管理面试进度
+ * 包含评分、评语、音频路径等
+ */
 @Entity
 @Table(name = "resumes")
 public class Resume {
+    // 唯一标识
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -13,7 +13,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 /**
- * Markdown 转换器
+ * Markdown格式文档转换为PDF的工具类
  */
 public class MarkdownToPdfConverter {
     /**
