@@ -4,31 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="consumer model Data 数据类的开发">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/audio/AudioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/audio/services/AudioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/controller/CandidateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Candidates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Knowledge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/ResumeVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/CandidatesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/KnowledgeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/ResumeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/repository/ResumeVectorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/CandidatesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/EmbeddingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/ResumeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/ResumeVectorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/tools/Face2FaceTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/tools/WrittenTestTools.java" afterDir="false" />
+    <list default="true" id="706f41e0-fd10-44d5-9950-bc47a1090c01" name="Changes" comment="consumer model service 简历处理阶段1的开发">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/advisor/LoggingAdvisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/assistant/ResumeRewriterAssistant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/JDKeywordExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/services/ResumeRewriterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/static/images/dongmingzhu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/static/images/earth.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/static/images/elonmusk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/static/images/leijun.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/static/images/trump.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatusConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/CandidateStatusConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/IsDoneStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/data/Resume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/Dto2Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/Dto2Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/ai/agent/util/MarkdownToPdfConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,43 +69,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.MarkdownToPdfConverter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.extract_keywords.executor&quot;: &quot;Run&quot;,
-    &quot;Python.extract_text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.html2pdf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/AI_Project/MultiSimEvalAgent/MultiSimEvalAgent/scripts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.30716982&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.33844912&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.MarkdownToPdfConverter.executor": "Run",
+    "Python.extract_keywords.executor": "Run",
+    "Python.extract_text.executor": "Run",
+    "Python.html2pdf.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/AI_Project/MultiSimEvalAgent/MultiSimEvalAgent",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30716982",
+    "settings.editor.selected.configurable": "com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable",
+    "settings.editor.splitter.proportion": "0.33844912",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent\scripts" />
       <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent" />
+      <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent\scripts" />
       <recent name="D:\AI_Project\MultiSimEvalAgent\MultiSimEvalAgent\consumer\src\main\resources" />
     </key>
   </component>
@@ -260,7 +246,8 @@
       <workItem from="1749287826475" duration="4825000" />
       <workItem from="1749299442417" duration="9538000" />
       <workItem from="1749343408070" duration="12118000" />
-      <workItem from="1749378668852" duration="9262000" />
+      <workItem from="1749378668852" duration="9412000" />
+      <workItem from="1749457391873" duration="11941000" />
     </task>
     <task id="LOCAL-00001" summary="common model工具类 util 的实现">
       <option name="closed" value="true" />
@@ -302,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749308570991</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="consumer model service 简历处理阶段1的开发">
+      <option name="closed" value="true" />
+      <created>1749388704208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749388704208</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +321,8 @@
     <MESSAGE value="开始开发consumer model" />
     <MESSAGE value="编写 python 脚本：简历自动化评测流水线" />
     <MESSAGE value="consumer model Data 数据类的开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="consumer model Data 数据类的开发" />
+    <MESSAGE value="consumer model service 简历处理阶段1的开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="consumer model service 简历处理阶段1的开发" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
